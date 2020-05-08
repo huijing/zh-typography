@@ -1,0 +1,20 @@
+---
+layout: base.njk
+css: front
+---
+<header>
+  <h1>{{ metadata.title }}</h1>
+</header>
+
+<main>
+  <ul class="grid">
+    {%- for post in collections.post -%}
+    <li class="grid__item">
+      <a href="{{ post.url | url }}">
+        <p>{{ post.data.title }}</p>
+        <img src="{{ post.data.image }}" alt="{{ post.data.alt }}">
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</main>

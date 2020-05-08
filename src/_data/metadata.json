@@ -1,0 +1,16 @@
+{
+  "title": "A Journey Through Chinese Typography",
+  "url": "https://huijing.github.io/zh-typography",
+  "description": "Research findings and notes on Chinese writing and typography across different mediums past and present",
+  "feed": {
+    "subtitle": "Research findings and notes on Chinese writing and typography across different mediums past and present",
+    "filename": "feed.xml",
+    "path": "/feed.xml",
+    "url": "https://huijing.github.io/zh-typography/feed.xml",
+    "id": "https://huijing.github.io/zh-typography/"
+  },
+  "author": {
+    "name": "Chen Hui Jing",
+    "email": "kakyou_tensai@yahoo.com"
+  }
+}

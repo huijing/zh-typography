@@ -1,0 +1,254 @@
+// Fonts
+@font-face {
+  font-family: 'Neo Euler';
+  src: url('../fonts/euler.woff2') format('woff2'),
+       url('../fonts/euler.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+$base-font: 'Neo Euler', 'Georgia', serif;
+
+// Responsive typography
+$min-width: 320;
+$max-width: 1280;
+$min-font: 18;
+$max-font: 24;
+
+:root {
+  font-size: #{$min-font}px;
+}
+
+@media (min-width: #{$min-width}px) and (max-width: #{$max-width}px) {
+  :root {
+    font-size: calc( #{$min-font}px + (#{$max-font} - #{$min-font}) * ( (100vw - #{$min-width}px) / ( #{$max-width} - #{$min-width})));
+  }
+}
+
+@media (min-width: #{$max-width}px) {
+  :root {
+    font-size: #{$max-font}px;
+  }
+}
+
+// General styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: $base-font;
+  display: flex;
+  flex-direction: column;
+
+  &::before,
+  &::after {
+    content: '';
+    position: fixed;
+    background-repeat: no-repeat;
+    will-change: transform;
+    z-index: -1;
+  }
+}
+
+main {
+  flex: 1;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  font-size: 85%;
+  padding: 0.5rem;
+}
+
+h1 {
+  font-size: 141.4%;
+}
+
+h2 {
+  font-size: 120%;
+}
+
+p {
+  line-height: 1.33;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+blockquote {
+  font-style: italic;
+  color: #666;
+  padding: 0 1rem;
+
+  p {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  small {
+    font-size: 75%;
+  }
+}
+
+.front {
+  background-color: #ebe2d3;
+
+  &::before {
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    background-size: cover;
+    background-image: url('../img/main-bg.jpg');
+  }
+
+  header {
+    padding: 5vmin;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  p {
+    margin: 0.5rem;
+  }
+
+  img {
+    max-width: 3rem;
+  }
+}
+
+@supports (display: grid) {
+  .grid {
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: repeat(3, calc(100% / 3));
+    grid-template-areas: '. . a'
+                         '. b .'
+                         'c . .';
+  }
+
+  .grid__item {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .grid__item:nth-child(1) {
+    grid-area: a;
+  }
+
+  .grid__item:nth-child(2) {
+    grid-area: b;
+  }
+
+  .grid__item:nth-child(3) {
+    grid-area: c;
+  }
+}
+
+body:not(.front) {
+  background-color: #eee9e3;
+
+  &::before {
+    width: 25%;
+    height: 100%;
+    bottom: 0;
+    left: -1.5rem;
+    background-size: contain;
+    background-image: url('../img/left.jpg');
+  }
+
+  &::after {
+    background-position: right;
+    width: 20%;
+    height: 70%;
+    top: 0;
+    right: 0;
+    background-size: contain;
+    background-image: url('../img/right.jpg');
+  }
+
+  main {
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  ol,
+  ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    justify-content: flex-end;
+  }
+}
+
+article {
+  a {
+    border-bottom: 1px dashed;
+    transition: background-color 0.5s, color 0.5s;
+
+    &:hover {
+      background-color: black;
+      color: white;
+      border-color: transparent;
+    }
+  }
+}
+
+.home {
+  align-self: flex-end;
+
+  img {
+    height: 3rem;
+    width: 3rem;
+  }
+}
