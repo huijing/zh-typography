@@ -13,3 +13,5 @@ npm-debug.log*
 
 # generated files
 .jekyll-metadata
+package-lock.json
+docs
