@@ -21,7 +21,7 @@ A language is closely intertwined with the culture, history and identity of the 
 
 <figure>
     <figcaption>Pottery fragments from Xianrendong Cave (<a href="http://www.nydailynews.com/news/world/pottery-fragments-found-south-china-cave-confirmed-20-000-years-old-archaeologists-article-1.1104485">Source</a>)</figcaption>
-    <img src="{{ site.url }}/assets/img/posts/zh-type/xianrendong.jpg" srcset="{{ site.url }}/assets/img/posts/zh-type/xianrendong@2x.jpg 2x" />
+    <img src="{{ site.url }}/assets/img/posts/xianrendong.jpg" srcset="{{ site.url }}/assets/img/posts/xianrendong@2x.jpg 2x" />
 </figure>
 
 Chinese civilisation has a very long history dating back to the Mesolithic age, based on [prehistoric pottery shards found in Jiangxi, China](http://science.sciencemag.org/content/336/6089/1696). In fact, China can be considered the oldest continuous civilisation in the world. Here's a highly simplified timeline, because visualisations help comprehension (who said that? I did <span class="emoji" role="img" tabindex="0" aria-label="smirking face">&#x1F60F;</span>). You'll need to scroll, a lot, because the Chinese have a long history.
@@ -47,7 +47,7 @@ Professor Zheng Huisheng (郑慧生老师) from Henan University posited that [C
 
 <figure>
     <figcaption>Glyphs from excavated ancient Liuwan pottery (<a href="http://web.archive.org/web/20170120090334/http://c19680213.blog.163.com/blog/static/1091357332016128112347771/">Source</a>)</figcaption>
-    <img src="{{ site.url }}/assets/img/posts/zh-type/liuwan.png" srcset="{{ site.url }}/assets/img/posts/zh-type/liuwan@2x.png 2x" />
+    <img src="{{ site.url }}/assets/img/posts/liuwan.png" srcset="{{ site.url }}/assets/img/posts/liuwan@2x.png 2x" />
 </figure>
 
 ### Seal script (篆书)
@@ -70,7 +70,7 @@ Oracle bone script is very pictographic in nature, for example, the word for sun
 
 <figure>
     <figcaption>日、山、月、田、米、家</figcaption>
-    <img src="{{ site.url }}/assets/img/posts/zh-type/oracle-bone.png">
+    <img src="{{ site.url }}/assets/img/posts/oracle-bone.png">
 </figure>
 
 The thin strokes and limited curves stem from the fact that turtle plastrons and animal bones are very hard and thus aren't easy to carve. As mentioned earlier, Oracle bone script as a language was pretty sophisticated already, complete with verbs and pronouns. Although the characters themselves were far from the standardised characters we see today. I mean, everyone draws a bird or fish differently <span class="emoji" role="img" tabindex="0" aria-label="person shrugging">&#x1F937;</span>.
