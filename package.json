@@ -5,14 +5,14 @@
   "license": "MIT",
   "scripts": {
     "start": "gulp dev",
-    "build": "eleventy"
+    "build": "gulp build"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "@babel/register": "^7.9.0",
+    "@babel/core": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "@babel/register": "^7.10.1",
     "autoprefixer": "^9.8.0",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
